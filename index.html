@@ -108,24 +108,29 @@
         /* GIFs animados */
         .gif {
             position: absolute;
-            width: 100px;
+            width: 150px; /* Tamaño más grande */
             height: auto;
             z-index: 1;
-        }
-        .gif-1 {
-            top: 10%;
-            left: 5%;
             animation: float 6s infinite ease-in-out;
         }
+        .gif-1 {
+            top: 5%;
+            left: 5%;
+        }
         .gif-2 {
-            top: 20%;
+            top: 10%;
             right: 5%;
-            animation: float 8s infinite ease-in-out;
+            animation-duration: 8s;
         }
         .gif-3 {
-            bottom: 10%;
+            bottom: 5%;
             left: 10%;
-            animation: float 7s infinite ease-in-out;
+            animation-duration: 7s;
+        }
+        .gif-4 {
+            bottom: 15%;
+            right: 10%;
+            animation-duration: 9s;
         }
         @keyframes float {
             0%, 100% {
@@ -145,10 +150,11 @@
     <div class="star" style="top: 70%; left: 10%;"></div>
     <div class="star" style="top: 90%; left: 40%;"></div>
 
-    <!-- GIFs animados -->
-    <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="GIF 1" class="gif gif-1">
-    <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="GIF 2" class="gif gif-2">
-    <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="GIF 3" class="gif gif-3">
+    <!-- GIFs animados de San Valentín -->
+    <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Ositos besándose" class="gif gif-1">
+    <img src="https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif" alt="Corazones animados" class="gif gif-2">
+    <img src="https://media.giphy.com/media/3o7TKMt1VV26qJQ5MY/giphy.gif" alt="Cupido disparando flechas" class="gif gif-3">
+    <img src="https://media.giphy.com/media/3o7TKz2eMXE7ztM3Cg/giphy.gif" alt="Flores y corazones" class="gif gif-4">
 
     <div class="container">
         <h1>Para mi hermosa Ania, el amorcito mío <span class="heart">❤️</span></h1>
