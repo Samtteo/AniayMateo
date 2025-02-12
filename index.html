@@ -143,10 +143,48 @@
     </style>
 </head>
 <body>
-    <audio id="musica" loop>
-       <source src="valentin.mp3" type="audio/mpeg">
-    </audio>
-    <button onclick="document.getElementById('musica').play()">Reproducir Música</button>
+   <audio id="musica" loop>
+    <source src="valentin.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playButton" onclick="playMusic()">🎵 Reproducir Música</button>
+
+<style>
+    #playButton {
+        background: linear-gradient(45deg, #ff6f61, #ff2e63);
+        color: white;
+        font-size: 18px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(255, 46, 99, 0.3);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+    }
+
+    #playButton:hover {
+        background: linear-gradient(45deg, #ff2e63, #ff6f61);
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(255, 46, 99, 0.5);
+    }
+</style>
+
+<script>
+    function playMusic() {
+        const audio = document.getElementById('musica');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('playButton').textContent = "⏸️ Pausar Música";
+        } else {
+            audio.pause();
+            document.getElementById('playButton').textContent = "🎵 Reproducir Música";
+        }
+    }
+</script>
 
     <!-- Estrellas brillantes (muchas más y más grandes) -->
     <div class="star" style="top: 5%; left: 10%;"></div>
