@@ -143,10 +143,11 @@
     </style>
 </head>
 <body>
-    <audio autoplay loop>
-      <source src="valentin.mp3" type="audio/mpeg">
-      Tu navegador no soporta el elemento de audio.
+    <audio id="musica" loop>
+       <source src="valentin.mp3" type="audio/mpeg">
     </audio>
+    <button onclick="document.getElementById('musica').play()">Reproducir Música</button>
+
     <!-- Estrellas brillantes (muchas más y más grandes) -->
     <div class="star" style="top: 5%; left: 10%;"></div>
     <div class="star" style="top: 15%; left: 30%;"></div>
